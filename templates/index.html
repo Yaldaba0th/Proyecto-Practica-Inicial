@@ -1,0 +1,63 @@
+{% extends 'layout.html' %}
+
+{% block body%}
+<!--Este es el cuerpo del html-->
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+{% for message in messages%}
+<div class="alert alert-success alert-dismissible fade show center bg-warning text-white" role="alert">
+    {{message}}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+{% endfor %}
+{% endif %}
+{% endwith %}
+<section>
+    <h1>Impresoras 3D</h1>
+
+    <!--Seccion formulario añadir una impresora-->
+    <section>
+        <!--Seccion tabla donde se muestran los datos-->
+        <div class="contenedor-tabla">
+            <table class="container sombra">
+                <thead>
+                    <tr>
+                        <td>Impresora</td>
+                        <td>Ip pública</td>
+                        <td>Ip local</td>
+                        <td>Panel de control</td>
+                        <td>Acciones</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for impresora in impresoras  %}
+                    <tr>
+                        <td>{{impresora.1}}</td>
+                        <td>{{impresora.3}}</td>
+                        <td>{{impresora.2}}</td>
+                        <td>
+                            <a class="btn-enlace" href="/panel/{{ impresora.0 }}">Ingresar panel</a>
+                        </td>
+                        <td>
+                            <a href="/edit/{{impresora.0}}" class="btn-editar center">Editar</a>
+                            <a href="/delete/{{impresora.0}}" class="btn-eliminar center btn-confirm">Eliminar</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section>
+        <div class="container pd">
+            <a class="btn-gofm" href="/formulario">Agregar impresora</a>
+        </div>
+    </section>
+
+    </div>
+
+
+    {% endblock %}
+    <!--Finaliza el cuerpo del html-->

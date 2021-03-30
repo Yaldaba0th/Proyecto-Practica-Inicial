@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+{% block body %}
+<div>
+    <!-- Seccion para editar el contacto-->
+    <section>
+        <div class="contenedor-editar bg container sombra">
+            <h3>Edita tu impresora</h3>
+            <form action="/update/{{datos.0}}" method="POST">
+                <div class="campos-formulario">
+                    <label>Nombre impresora:</label>
+                    <input type="text" name="name" placeholder="Anet A8" class="campo" value="{{ datos.1 }}">
+                    <label>Ip impresora:</label>
+                    <input type="text" name="ip" placeholder="192.168.0.1" class="campo" value="{{ datos.3 }}">
+                    <label>Ip pública:</label>
+                    <input type="text" name="ip_publica" class="campo" value="{{ datos.2 }}">
+                    <label>Boquilla:</label>
+                    <input type="text" name="boquilla" class="campo" value="{{ datos.4 }}">
+                    <label>Cama:</label>
+                    <input type="text" name="cama" class="campo" value="{{ datos.5 }}">
+                    <label>Tipo filamento:</label>
+                    <input type="text" name="filamento" class="campo" value="{{ datos.6 }}">
+                    <label>Color:</label>
+                    <input type="text" name="color_filamento" class="campo" value="{{ datos.7 }}">
+                    <button type="submit" class="btn btn-añadir">Guardar</button>
+                </div>
+            </form>    
+        </div>
+    </section>
+</div>
+{% endblock %}

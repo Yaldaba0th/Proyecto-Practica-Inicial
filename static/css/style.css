@@ -1,0 +1,287 @@
+/* Estilo titulos*/
+h1{
+    text-align: center;
+    margin-top: 10px;
+}
+h3{
+  padding-top: 10px;  
+  text-align: center;
+  color:white;
+}
+/* fin estilo titulo*/
+
+/*estilo imagen*/
+img{
+    margin-top:10px;
+}
+/*fin estilo imagen*/
+
+/*Estilo del contenedor del formulario para añadir impresoras*/
+.contenedor-añadir{
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+.campos-formulario{
+    display: flex;
+    flex-direction: column ;
+}
+.campo{
+   display:flex;
+    
+}
+.container-lista-impresoras{
+    display: flex;
+    justify-content: center;
+}
+.bg{
+    background-color: #0757B2;
+}
+.sombra{
+    -webkit-box-shadow: 0px 3px 14px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 14px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 14px 0px rgba(0,0,0,0.75);
+    border-radius: 10px;
+}
+label{
+    padding-top:5px;
+    padding-right: 10px;
+    color:white;
+    text-align: start;
+}
+/*Fin estilo contenedor para añadir impresoras*/
+
+/*estilo tabla*/
+.contenedor-tabla{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead{
+    background-color: #2E59C6;
+    color: white;
+    text-align: center  ;
+    
+}
+thead th{
+    padding: 10px 0;
+}
+tbody{
+    background-color: #E0E8FB;
+}
+tbody td{
+    padding: 10px;
+    text-align: center;
+    
+}
+/* Fin estilo tabla */
+
+/* Botones*/
+.btn-editar{
+    background-color: #3EBE25;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 10px;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+.btn-editar:hover{
+    text-decoration: none;
+    cursor:pointer;
+    background-color: #37A322;
+    color:white;
+}
+
+.btn-eliminar{
+    background-color:#FF2828;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.btn-eliminar:hover{
+    text-decoration: none;
+    cursor:pointer;
+    background-color: #FF0707;
+    color:white;
+}
+.btn-abortar{
+    background-color:#FF2828;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.btn-abortar:hover{
+    text-decoration: none;
+    cursor:pointer;
+    background-color: #FF0707;
+    color:white;
+}
+.btn-enlace{
+    background-color:#2FA4E7;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 10px;
+
+}
+.btn-enlace:hover{
+    text-decoration: none;
+    cursor:pointer;
+    background-color: #0757B2;
+    color:white;
+}
+.btn-ingresar{
+    background-color: light;
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+    margin-top: 5px;
+    
+
+}
+.btn-ingresar:hover{
+    text-decoration: none;
+    cursor:pointer;
+    background-color: lightgray;
+    color:black;
+}
+
+.btn-añadir{
+    margin-bottom: 10px;
+    background-color:#2FA4E7;
+    color:white;
+    text-decoration: none;
+}
+.btn-gofm:hover{
+    text-decoration: none;
+    cursor:pointer;
+    background-color: #0757B2;
+    color:white;
+}
+
+.btn-gofm{
+    background-color: #2FA4E7;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.btn-gofm:hover{
+    text-decoration: none;
+    cursor:pointer;
+    background-color: #0757B2;
+    color:white;
+}
+
+.btn-volver{
+    background-color: #2FA4E7;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-right: 50px;
+}
+.btn-volver:hover{
+    text-decoration: none;
+    cursor:pointer;
+    background-color: #0757B2;
+    color:white;
+}
+.btn-detalles{
+    background-color: light;
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+    margin-top: 7px;
+}
+.btn-detalles:hover{
+    text-decoration: none;
+    cursor:pointer;
+    background-color: lightgray;
+    color:black;
+}
+
+/* end botones*/
+
+/* estilos contenedor para editar*/
+.contenedor-editar{
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+/* estilo contenedor para los detalles*/
+.contenedor-detalles{
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+/* padding o margin */
+
+.pd{
+    margin-top: 20px;
+    display:flex;
+    justify-content: flex-end;
+}
+
+.letra-detalles{
+    padding-top:10px;   
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.resultado{
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 5px;    
+}
+
+.center{
+    margin-right: 10px;
+    text-align: center;
+}
+.flex{
+    display:flex;
+    flex-direction: column;
+}
+
+.disp{
+    font-size: 80px;
+  
+}
+
+.st-card{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.pd-pa{
+    margin-top: 30px;
+}
+.pos-bot{
+    display: flex;
+    justify-content: space-between;
+}
+.card-header{
+    background-color: green;
+    color:white;
+}
+.mar-t{
+    margin-top: 2px;
+}
+.text-white{
+    color:white;
+    font-size: 25px;
+}
